@@ -1,0 +1,31 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 10rem;
+    height: 3rem;
+}
+.Header-menu{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: #fff;
+}
+
+.Header-menu li:hover{
+    color: var(--orange);
+}
+
+@media screen and (max-width: 768px) {
+    .Header>:nth-child(2){
+        position: fixed;
+        right: 2rem;
+        z-index: 0;
+    }
+    .Header-menu{
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem
+    }
+}
